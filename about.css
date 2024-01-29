@@ -1,0 +1,168 @@
+.about {
+  height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* border: 1px solid #111; */
+}
+
+.about > * {
+  /* border: .5px solid #111; */
+}
+
+.about-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+  /* border: 1px solid #222; */
+  height: 40%;
+}
+
+.about-wrap h3 {
+  width: 30%;
+  font-size: 56px;
+  font-weight: 900;
+  display: flex;
+  justify-content: end;
+  /* border: 1px solid #222; */
+  line-height: 64px;
+  text-align: right;
+}
+
+.about-wrap p {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  /* border: 1px solid #222; */
+  line-height: 34px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+  /* border: 1px solid #222; */
+  height: 30%;
+}
+
+.details-wrap {
+  /* border: 1px solid #222; */
+  width: 80%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  padding: 0 30px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 1px 0px rgba(0, 0, 0, 0.2),
+    -2px -2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.session {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 50px 0;
+}
+
+.session-wrap {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.session-wrap .card {
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 1px 0px rgba(0, 0, 0, 0.2),
+    -2px -2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card:nth-child(4) h3{
+    color: #070f46;
+}
+
+.card h3 span{
+    color: #070f46;
+}
+
+.card p {
+  text-align: justify;
+}
+
+@media (min-width: 320px) and (max-width: 860px) {
+  .about {
+    padding: 100px 0 50px 0;
+    height: 100%;
+    gap: 20px;
+  }
+
+  .about-wrap {
+    flex-direction: column;
+    height: 30%;
+    margin: 10px 0;
+    gap: 20px;
+  }
+
+  .about-wrap h3 {
+    width: 90%;
+    justify-content: start;
+    text-align: left;
+    font-size: 48px;
+  }
+
+  .about-wrap p {
+    width: 90%;
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .details {
+    flex-direction: column;
+    height: 50%;
+    align-items: center;
+    width: 90%;
+    justify-content: space-evenly;
+    gap: 30px;
+  }
+
+  .details-wrap {
+    margin: 0 16px;
+    width: 98%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .details h2 {
+    height: 30%;
+  }
+
+  .details span {
+    display: none;
+  }
+
+  .session {
+    padding: 50px 0;
+  }
+
+  .session-wrap {
+    flex-direction: column;
+  }
+
+  .session-wrap .card {
+    width: 98%;
+    height: 100%;
+  }
+}

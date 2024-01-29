@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    .organiser {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        /* border: 1px solid #222; */
+        height: 80vh;
+    }
+
+    .organiser-wrap {
+        width: 40%;
+        font-size: 56px;
+        font-weight: 900;
+        display: flex;
+        justify-content: end;
+        /* border: 1px solid #222; */
+        text-align: right;
+    }
+
+    .organiser-wrap h3 {
+        width: 100%;
+        line-height: 90px;
+        font-size: 80px;
+    }
+
+    .contact {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 50px 0;
+    }
+
+    .contact-wrap {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+    }
+
+    .con-card {
+        width: 400px;
+        height: 160px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 1px 0px rgba(0, 0, 0, 0.2),
+            -2px -2px 1px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .con-card h3{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .con-card h3 span{
+        font-weight: 300;
+        font-size: 16px;
+    }
+
+    .con-card p{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        height: 20%;
+        color: #070f46;
+        letter-spacing: 1px;
+    }
+
+    @media (min-width: 320px) and (max-width: 860px) {
+
+        .organiser{
+            height: 70vh;
+        }
+        .organiser-wrap {
+            width: 90%;
+        } 
+        .organiser-wrap h3 {
+            font-size: 48px;
+            text-align: left;
+            line-height: unset;
+        }
+
+        .con-card h3{
+            flex-direction: column;
+        }
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <nav>
+            <div class="nav-wrap">
+
+                <a href="#">
+                    <img src="img/logo (1).png" alt="">
+
+                </a>
+
+                <span class="material-symbols-outlined" onclick="openmenu()">
+                    blur_on
+                </span>
+            </div>
+        </nav>
+
+        <div class="organiser">
+            <div class="organiser-wrap">
+                <h3>The Organiser & Team</h3>
+
+            </div>
+            <!-- <div class="details">
+                <div class="details-wrap">
+                    <h2>Event Details</h2>
+                    <p>Date : Coming Soon</p>
+                    <p>Venue : RV Campus</p>
+                    
+                </div>
+            </div> -->
+        </div>
+
+        <div class="contact">
+            <div class="contact-wrap">
+                <div class="con-card">
+                    <h3>Dr. BHARATISH A : <span>Assistant Professor</span></h3>
+                    <p>+91 9538288686
+                    </p>
+                </div>
+                <div class="con-card">
+                    <h3>Dr. G R RAJKUMAR : <span>Assistant Professor</span>
+                    </h3>
+                    <p>+91 9739728089</p>
+                </div>
+                <div class="con-card">
+                    <h3>VINEETH RAO : <span>I Semester</span>
+                    </h3>
+                    <p>+91 8217684886</p>
+                </div>
+                <div class="con-card">
+                    <h3>KUNAL RATHODE : <span>I Semester</span>
+                    </h3>
+                    <p>+91 9019044492</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu" id="menu">
+            <div class="close" onclick="closemenu()">
+                <i class='bx bx-x'></i>
+            </div>
+            <div class="link">
+                <a href="about.html">About</a>
+                <a>Organiser</a>
+            </div>
+            <div class="asso">
+                <img src="img/logo (2).png" alt="">
+            </div>
+            <div class="dev">
+                <a href="https://vedagency.vercel.app/">Developers info
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-wrap">
+                <div class="clg">
+                    <p>RV @mechanical</p>
+                </div>
+                <div class="socials">
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-twitter'></i>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
